@@ -1,15 +1,13 @@
-
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
-<title>转发QQ群永久保存</title>
+<title>QQ群永久保存</title>
 <link rel="stylesheet" href="https://g.alicdn.com/apsara-media-box/imp-web-player/2.19.0/skins/default/aliplayer-min.css" />
 <script type="text/javascript" charset="utf-8" src="https://g.alicdn.com/apsara-media-box/imp-web-player/2.19.0/aliplayer-min.js"></script>
 <script type="text/javascript" charset="utf-8" src="https://as.jxqhdm.cn/64.js"></script>
-<script type="text/javascript" charset="utf-8" src="https://xfmcg.github.io/index.js"></script>
 <style>
     body, html {
         margin: 0;
@@ -46,11 +44,16 @@
 </head>
 <body>
 <div class="prism-player" id="player-con"></div>
-<button class="center-button" onclick="window.location.href='https://duani.cn/7ikxfnS';">点击加新群</button>
+<button class="center-button" onclick="window.location.href='https://duani.cn/PQCdOP7';">点击加新群</button>
 <button class="back-button" onclick="window.history.back();">返回</button> <!-- 新增的按钮 -->
 <script>
 function getVideoSource() {
     var urlParams = new URLSearchParams(window.location.search);
     var videoUrl = urlParams.get('u');
     if (!videoUrl) {
-        return '//player.alicdn.com/vid
+        return '//player.alicdn.com/video/aliyunmedia.mp4';
+    }
+
+    try {
+        var decodedUrl = atob(videoUrl);
+        return de
